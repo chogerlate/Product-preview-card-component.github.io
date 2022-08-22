@@ -1,0 +1,143 @@
+:root {
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%) ;
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+
+   
+
+}
+ $font : 'Montserrat', sans-serif;
+$font2 : 'Fraunces', serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: var(--Cream);
+    height: 100vh;
+    display: grid;
+    place-content: center;
+     
+     
+}
+
+    
+
+main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+// .card{
+
+// }
+.card-content{
+    display: flex;  
+     height: 100%;
+   
+     
+     @media screen and (max-width:40rem) {
+        flex-direction: column;
+    
+        
+     }
+    
+}
+.card-description{
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    width: fit-content;
+    padding: 2.5rem 2.5rem;
+    background-color: var(--White);
+    border-radius: 0rem 1rem 1rem 0rem;
+    position: relative;
+    @media screen and (max-width:40rem) {
+          border-radius: 0rem 0rem 1rem 1rem;
+    
+     }
+    
+}
+img{
+    width: 40ch;
+    height: inherit;
+    display: block;
+    object-fit: cover;
+    border-radius: 1rem 0rem 0rem 1rem;
+     @media screen and (max-width:40rem) {
+          border-radius: 1rem 1rem 0rem 0rem;
+      
+     }
+  
+}
+.headline{
+    position: absolute;
+    font-size: 0.9rem;
+   
+    color:var(--Dark-grayish-blue);
+    font-family: $font;
+    font-weight: 700;
+    left: 2.4rem;
+    top: 2.5rem;
+}
+.product-description{
+    padding: 2.5rem 0rem;
+}
+.card-description h1{
+    font-family: $font2;
+    line-height: 2.5rem;
+    font-weight: 700;
+     max-width: 9ch;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.card-description p{
+    max-width: 25ch;
+    font-size: 14px;
+    font-family: $font;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: var(--Dark-grayish-blue);;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.dprice{
+    display: inline-block;
+    font-family: $font2;
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--Dark-cyan);
+}
+.rprice{
+    display: inline-block;
+    font-family: $font;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+}
+
+button{
+    width: 27ch ;
+    height: 3rem;
+    border: none;
+    color: var(--White);
+    background-color: var(--Dark-cyan);
+    border-radius: 5px;
+
+}
+button label{
+    font-family: $font;
+    font-weight: 500;
+    margin-left: 0.25rem;
+}
