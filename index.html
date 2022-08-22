@@ -25,8 +25,13 @@
   <main>
     <!-- <div class="card"> -->
     <div class="card-content">
-      <img src="./images/image-product-desktop.jpg" srcset="./images/image-product-mobile.jpg 375w,
-                    ./images/image-product-desktop.jpg 1440w" alt="">
+      <picture>
+        <source media="(max-width:600px)" srcset="./images/image-product-mobile.jpg">
+        <source media="(min-width:600px)" srcset="./images/image-product-desktop.jpg">
+        <img src="./images/image-product-desktop.jpg" alt="Perfume">
+      </picture>
+      <!-- <img src="./images/image-product-desktop.jpg" srcset="./images/image-product-mobile.jpg 500w,
+                    ./images/image-product-desktop.jpg 1440w" alt=""> -->
       <!-- <div class="img"></div> -->
       <div class="card-description">
         <section class="product-type">
